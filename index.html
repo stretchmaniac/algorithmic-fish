@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <link rel='stylesheet' href='styles.css'>
+    <script
+  	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  	  crossorigin="anonymous">
+    </script>
+    <script src="libs/vectorious.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type='text/javascript' src='fish.js'></script>
+  </head>
+  <body>
+    <div id='header'>
+      <div id='title'>Fish Magic Box</div>
+    </div>
+    <div id='container'>
+      <div id='canvas-area'>
+        <canvas width='800px' height='800px' id='canvas'></canvas>
+        <div id='generation-counter'>generation: 0</div>
+        <div id='fish-counter'>population: 0</div>
+        <div id='fps-counter'>fps: 0</div>
+        <button id='screen-off-button'>Toggle Screen</button>
+      </div>
+      <div id='stats-area'>
+        <div id='pop-graph'></div>
+        <div id='food-graph'></div>
+        <div id='vel-graph'></div>
+      </div>
+    </div>
+  </body>
+</html>
